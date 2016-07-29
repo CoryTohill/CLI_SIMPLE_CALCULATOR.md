@@ -1,0 +1,111 @@
+# cli_simple_calculator
+Simple Interactive Calculator exercise from NSS
+
+# Simple Interactive Calculator
+
+## Goal
+
+Create a Console based Calculator in Python.
+
+## Setup
+
+```
+mkdir -p ~/workspace/python/exercises/calc && cd $_
+```
+
+
+## Requirements
+
+1. There should be Unit Tests on all classes and methods you create.
+1. If a user submits an incomplete command or expression, the calculator should **not** attempt to evaluate it but print out a useful message.
+
+## Overview of how it should work
+
+Starting your console application should create a prompt that looks like:
+
+```sh
+[x]>
+```
+where `x` is the number of executed commands/expressions during the user's current session. Call this your "counter".
+
+On startup, your initial prompt should always look like:
+
+```sh
+[0]>
+```
+
+The user will enter simple mathematical expressions or commands. The user pressing [Enter] will have the calculator print out the correct answer on the following line (prefixed with an `=`). After the answer is printed, the user should return to the original prompt.
+
+For example, below the user entered `2+1`, then pressed [Enter]. The calculator printed out the answer `3` and reprinted the prompt, waiting for input from the user.
+
+```sh
+[0]> 2+1
+   = 3
+[1]>
+```
+
+Further use of this session will again increment the counter part of the prompt:
+
+```sh
+[1]> 1-10
+   = -9
+[2]>
+```
+
+Finally, typing `exit` or `quit` should exit the program while printing a message:
+
+```sh
+[2]> exit
+Bye!!
+```
+
+
+## Features
+
+### Math Operations
+
+Your calculator should following operations
+
+1. addition (integer)
+2. subtraction (integer)
+3. integer division (integer)
+4. modulus (integer)
+5. multiplication (integer)
+
+
+### Calculator Commands
+
+In addition to math expressions, your calculator should accept the following commands:
+
+- `quit` and `exit` - exits the program
+- `last` - prints the last printed answer
+- `lastq` - prints the last entered command or expression
+
+
+### Challenge: Constants
+
+Implement the concept of 'constants' in the calculator. See below for how it should work:
+
+```sh
+[0]> x = 3
+   = saved 'x' as '3'
+[1]> x
+   = 3
+[2]> 1 + x
+   = 4
+[3]> x = 4
+   = Error!
+```
+
+#### Constants Specifications
+
+1. Any lowercase letter of the alphabet can be a constant.
+2. Calculator should be case insensitive. `A` is considered the same as `a`.
+3. Constants can only be defined once per session.
+4. Defined constants can be used in math expressions
+5. Using undefined constants should result in a printed a helpful message noting the constant is undefined.
+
+
+## Guidance
+
+[Read GUIDANCE for assistance on progressing through the project](https://github.com/jcockhren/simple-calculator/blob/master/GUIDANCE.md)
