@@ -6,11 +6,8 @@ Simple Interactive Calculator exercise from NSS
 * In project folder run the following command:
 ```python calculator.py```
 
- 
-  
-   
-# Exercise Instructions:
-# Simple Interactive Calculator
+# Exercise Instructions Below:
+## Simple Interactive Calculator
 
 ## Goal
 
