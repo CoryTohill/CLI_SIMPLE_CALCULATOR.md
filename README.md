@@ -1,11 +1,12 @@
 # cli_simple_calculator
 Simple Interactive Calculator exercise from NSS
 
-## To run:
+## To run SIC:
 * Clone/Fork repo from GitHub
 * In project folder run the following command:
 ```python calculator.py```
 
+# Exercise Instructions:
 # Simple Interactive Calculator
 
 ## Goal
